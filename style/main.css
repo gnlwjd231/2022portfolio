@@ -17,6 +17,36 @@ body{
     margin-left: calc(1200px / -2);
 }
 
+nav{
+    position: fixed;
+    bottom: 100px;
+    z-index: 100;
+    left: 50%;
+    margin-left: 630px;
+    font-size: 14px;
+}
+
+nav a{
+    color: #000;
+}
+
+nav a:hover{
+    font-weight: 600;
+}
+
+nav>ul>li{
+    margin-bottom: 20px;
+}
+
+nav>ul>li.active{
+    font-weight: 600;
+}
+
+nav .projects-list li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
 main{
     padding: 60px 0;
 }
@@ -122,6 +152,18 @@ section{
     padding : 60px 0;
 }
 
+section a.url_tag svg{
+    color: #ccc;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    opacity: .6;
+}
+
+section a.url_tag:hover span,
+section a.url_tag:hover svg{
+    color:green;
+}
+
 .section-body{
     padding : 60px 0;
 }
@@ -130,6 +172,7 @@ section{
     width: 100%;
     display: flex;
     margin-bottom: 60px;
+    line-height: 1.6;
 }
 
 .section-content:last-child{
@@ -148,13 +191,14 @@ section{
 }
 
 .section-content .section-title{
-    width: 282px;
+    min-width: 282px;
     text-align: right;
     margin-right: 126px;
 }
 
 .section-content .section-description{
     flex-grow: 1;
+    
 }
 
 

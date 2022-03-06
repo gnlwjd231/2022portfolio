@@ -6,13 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2022 박휘정 포트폴리오</title>
 
+
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
     <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="/style/main.css">
+
+    <script src="/js/main.js"></script>
 </head>
 <body>
     <div class="body-container">
-    <div class="body-wrapper">
-            <main>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="#profile-container">profile</a>
+                </li>
+                <li>
+                    <a href="#project-container">project</a>
+                    <ul class="projects-list">
+                        <li>
+                            <a href="#project-section01">01 스마트팩토리</a>
+                        </li>
+                        <li>
+                            <a href="#project-section02">02 홈페이지 구축</a>
+                        </li>
+                        <li>
+                            <a href="#project-section03">03 스타벅스 랜딩 페이지</a>
+                        </li>
+                        <li>
+                            <a href="#project-section04">04 ID/PW 가계부</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#footer">footer</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="body-wrapper">
+            <main id="profile-container">
                 <h1 class="title100">
                     <span class="eng">Hello World</span>
                     <span class="kor">프로필</span>
@@ -49,8 +82,8 @@
                 </section>
             </main>
             <div class="separator"></div>
-            <div>
-                <section>
+            <div id="project-container">
+                <section id="project-section01">
                     <h1 class="title100">
                         <span class="eng">Project01</span>
                         <span class="kor">스마트팩토리</span>
@@ -78,7 +111,7 @@
                     </div>
                 </section>
                 <div class="separator"></div>
-                <section>
+                <section id="project-section02">
                     <h1 class="title100">
                         <span class="eng">Project02</span>
                         <span class="kor">홈페이지 구축</span>
@@ -106,20 +139,26 @@
                     </div>
                 </section>
                 <div class="separator"></div>
-                <section>
+                <section id="project-section03">
                     <h1 class="title100">
                         <span class="eng">Project03</span>
-                        <span class="kor">스타벅스 랜딩 페이지</span>
+                        <a class="url_tag" title="해당 프로젝트 새 창에서 열기" href="https://gnlwjd231.github.io/Starbucks/" target="blank">
+                            <span class="kor">스타벅스 랜딩 페이지</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </h1>
                     <div class="section-body">
                         <div class="section-body-wrapper">
                             <div class="section-content description">
                                 <div class="section-title">description</div>
-                                <div class="section-description">description</div>
+                                <div class="section-description">교육 플랫폼 '패스트캠퍼스'의 '한 번에 끝내는 프론트엔드 개발 초격차 패키지' 중 1부와 2부를 수강하며 만든 랜딩 페이지 입니다.</div>
                             </div>
                             <div class="section-content description">
-                                <div class="section-title">my Roll</div>
-                                <div class="section-description">description</div>
+                                <div class="section-title">motivation</div>
+                                <div class="section-description">
+                                    <span> 디자이너 업무를 하며 독학으로 배워 나간 개발에 베이직 스킬이 필요하다 느껴 퇴근 후 프론트엔드 스킬 함량을 위해 인터넷 강의를 수강했습니다. 이 프로젝트를 통해 html태그의 보편적인 규칙을 배우게 되었습니다. 효율적인 css사용법과 새로운 프레임워크를 사용해보게되었습니다.
+                                    </span>
+                                </div>
                             </div>
                             <div class="section-content description">
                                 <div class="section-title">used Skill</div>
@@ -134,7 +173,7 @@
                     </div>
                 </section>
                 <div class="separator"></div>
-                <section>
+                <section id="project-section04">
                     <h1 class="title100">
                         <span class="eng">Project04</span>
                         <span class="kor">ID/PW 가계부</span>
@@ -146,7 +185,7 @@
                                 <div class="section-description">description</div>
                             </div>
                             <div class="section-content description">
-                                <div class="section-title">my Roll</div>
+                                <div class="section-title">motivation</div>
                                 <div class="section-description">description</div>
                             </div>
                             <div class="section-content description">
@@ -164,7 +203,7 @@
                 <div class="separator"></div>
             </div>
             <div class="separator"></div>
-            <footer>
+            <footer id="footer">
                 <h1 class="title100">
                     <span class="eng">Footer</span>
                     <span class="kor">더 알아보기</span>
