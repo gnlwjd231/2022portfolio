@@ -4,6 +4,10 @@
     background-color: #EFF3F6;
 }
 
+.text-100{
+    font-size: 16px;
+}
+
 body{
     position: relative;
     font-family: 'Roboto', 'Noto Sans KR';
@@ -135,9 +139,7 @@ main{
     background-image: url(../img/github-brands.png);
 }
 
-.text-100{
-    font-size: 18px;
-}
+
 
 .main-content-myskill{
     margin-top: 30px;
@@ -145,7 +147,12 @@ main{
 
 .slider{
     height: 60px;
-    background: red;
+    padding-top: 15px;
+}
+
+.slider img{
+    height: 50px;
+    margin-right: 10px;
 }
 
 section{
@@ -188,6 +195,9 @@ section a.url_tag:hover svg{
     background: grey;
     height: 230px;
     width: 384px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section-content .section-title{
@@ -199,6 +209,11 @@ section a.url_tag:hover svg{
 .section-content .section-description{
     flex-grow: 1;
     
+}
+
+.section-content ul li::before{
+    content:"·";
+    margin-right: 10px;
 }
 
 
