@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2022 박휘정 포트폴리오</title>
 
-
+    <link rel="stylesheet" href="style/reset.css">
+    
     <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.css">
 
-    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
 
-    <link rel="stylesheet" href="style/reset.css">
+    <script src="node_modules/video.js/dist/video.js"></script>
+    <script src="node_modules/video.js/dist/video.min.js"></script>
+    <link rel="stylesheet" href="node_modules/video.js/dist/video-js.min.css">
+    <link rel="stylesheet" href="node_modules/video.js/dist/video-js.css"></script>
+
+    
     <link rel="stylesheet" href="style/main.css">
 
-    <script src="/js/main.js"></script>
+    
+    
+    
 </head>
 <body>
     <div class="body-container">
@@ -131,9 +140,22 @@
                                 </div>
                             </div>
                             <div class="section-content image">
-                                <div class="section-image"></div>
-                                <div class="section-image"></div>
-                                <div class="section-image"></div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide section-image" style="background-image: url(/img/project01/01smartfactory.png);" alt="로그인화면"></div>
+                                      <div class="swiper-slide section-image" style="background-image: url(/img/project01/08smartfactory.png);" alt="모니터링"></div>
+                                      <div class="swiper-slide section-image" style="background-image: url(/img/project01/09smartfactory.png);" alt="모니터링"></div>
+                                      <div class="swiper-slide section-image" style="background-image: url(/img/project01/07smartfactory.png);" alt="모니터링"></div>
+                                      <div class="swiper-slide section-image" style="background-image: url(/img/project01/11smartfactory.png);" alt="모니터링"></div>
+                                      <div class="swiper-slide section-image" style="background-image: url(/img/project01/04smartfactory.png);" alt="모니터링"></div>
+                                      <div class="swiper-slide section-image" style="background-image: url(/img/project01/05smartfactory.png);" alt="모니터링 다크모드"></div>
+
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,7 +183,7 @@
                                         <li>현재 회사의 니즈 파악을 통한 홈페이지 서비스 기획</li>
                                         <li>IT업체 트렌드와 회사사정을 고려한 UI/UX 디자인</li>
                                         <li>홈페이지 내에 들어갈 일러스트 전체</li>
-                                        <li>전체 웹 페이지의 퍼블리싱</li>
+                                        <li>전체 웹 페이지의 퍼블리싱, Media Query를 이용한 반응형 구현</li>
                                         <li>기존 url에 배포</li>
                                         <li>이 외 다수</li>
                                     </ul>
@@ -177,10 +199,28 @@
                                     <img src="./img/skills/github.png" alt="git">
                                 </div>
                             </div>
-                            <div class="section-content image">
-                                <div class="section-image"></div>
-                                <div class="section-image"></div>
-                                <div class="section-image"></div>
+                            <div class="section-content video">
+                                <video id="myVideo" class="video-js" preload="auto" width="1100px" height="538px" style="width:1100px; height:538px; background: #fff;" muted autoplay>
+                                    <source src="/img/project02/webpage_video.webm"  type="video/webm">
+                                    <!-- <source src="/img/project02/webpage_video.mp4" type="video/mp4"> -->
+                                </video>
+                                <!-- <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide section-image">Slide 1</div>
+                                        <div class="swiper-slide section-image">Slide 2</div>
+                                        <div class="swiper-slide section-image">Slide 3</div>
+                                        <div class="swiper-slide section-image">Slide 4</div>
+                                        <div class="swiper-slide section-image">Slide 5</div>
+                                        <div class="swiper-slide section-image">Slide 6</div>
+                                        <div class="swiper-slide section-image">Slide 7</div>
+                                        <div class="swiper-slide section-image">Slide 8</div>
+                                        <div class="swiper-slide section-image">Slide 9</div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -218,9 +258,26 @@
                                 </div>
                             </div>
                             <div class="section-content image">
-                                <div class="section-image" style="background-image: url(/img/starbucks_main_screenshot.jpg);"></div>
-                                <div class="section-image"></div>
-                                <div class="section-image"></div>
+                                <div class="section-image" style="background-image: url(/img/project03/main.png);">
+                                </div>
+                                <div class="section-image" style="background-image: url(/img/project03/login.png);">
+                                </div>
+                                <!-- <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide section-image">Slide 1</div>
+                                        <div class="swiper-slide section-image">Slide 2</div>
+                                        <div class="swiper-slide section-image">Slide 3</div>
+                                        <div class="swiper-slide section-image">Slide 4</div>
+                                        <div class="swiper-slide section-image">Slide 5</div>
+                                        <div class="swiper-slide section-image">Slide 6</div>
+                                        <div class="swiper-slide section-image">Slide 7</div>
+                                        <div class="swiper-slide section-image">Slide 8</div>
+                                        <div class="swiper-slide section-image">Slide 9</div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -268,31 +325,55 @@
                                 </div>
                             </div>
                             <div class="section-content image">
-                                <div class="section-image"></div>
-                                <div class="section-image"></div>
-                                <div class="section-image"></div>
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/01.png);"></div>
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/02.png);"></div>
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/03.png);"></div>
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/04.png);"></div>
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/05.png);"></div>
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/06.png);"></div>
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/07.png);"></div>
+                                        <div class="swiper-slide section-image" style="background-image: url(/img/project04/08.png);"></div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <div class="separator"></div>
+                <footer id="footer">
+                    <h1 class="title100">
+                        <span class="eng">Footer</span>
+                        <span class="kor">더 알아보기</span>
+                    </h1>
+                    <div class="section-body">
+                        <div class="section-body-wrapper">
+                            <h2>안녕하십니까 용감한 개발자 박휘정입니다.</h2>
+                            <p>저는 겁이 없는 편입니다.</p>
+                            <p>저에게 주로 동기를 부여하는 것은 반항심 혹은 호기심 입니다.</p>
+                            <p>저의 삶의 에너지는 주로 저 두가지 성격에서 기인합니다.</p>
+                            <p>가령 누군가 저에게 '이건 너무 어려워서 못해'라고 한다면, 일단 얼마나 어려운지 검색부터 해봅니다.</p>
+                            <p>할만한 일이라고 판단 된다면 즉시 시작하곤 합니다.</p>
+                            <p>그렇게 시작한 것이 개발이기도 합니다.</p>
+                            <p>프론트엔드에서의 끊임없이 변화하는 기술적 트렌드와 챌린지들은 저에게 강한 동기가 됩니다.</p>
+                            <p>만약 귀사에서 새로운 프로젝트를 들어갈 때 에너지 있는 사람이 필요하다면 제가 적절할 거라 믿습니다.</p>
+                            <p>지금 현재의 저는 변화하는 트렌드를 쫓아가는 팔로워에 불과하지만 언젠가는 그것을 시작하는 사람이 될 것 입니다</p>
+                            <p>제 역사를 지켜볼 수 있는 기회를 드리겠습니다.</p>
+                            <p>연봉은 1억 2천만 주세오.</p>
+                            <p>감사합니다.</p>
+                            <p>ps. 저는 메갈이니 가부장제도에 큰 뜻이 있으시면 연락말아주세오. 아니면 연봉 5억조야댐.</p>
+                        </div>
+                    </div>
+                </footer>
             </div>
             <div class="separator"></div>
-            <footer id="footer">
-                <h1 class="title100">
-                    <span class="eng">Footer</span>
-                    <span class="kor">더 알아보기</span>
-                </h1>
-                <div class="section-body">
-                    <div class="section-body-wrapper">
-                        In responsive layouts, column width is defined with  percentages, rather than fixed values. This 
-allows content to adapt to any screen size. The number of columns displayed in the grid is 
-determined by the breakpoint range, a range of predetermined screen sizes. A breakpoint can 
-correspond with mobile, tablet, or other screen type.   
-                    </div>
-                </div>
-            </footer>
         </div>
     </div>
 </body>
+<script src="/js/mySwiper.js"></script>
+<script src="/js/main.js"></script>
 </html>

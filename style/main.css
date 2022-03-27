@@ -72,7 +72,7 @@ main{
 }
 
 .main-section .left{
-    width: 384px;
+    min-width: 384px;
     height: 100%;
     background: #000;
     display: flex;
@@ -188,17 +188,50 @@ section a.url_tag:hover svg{
 
 .section-content.image {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.section-content.video {
+    display: flex;
+    justify-content: center;
 }
 
 .section-content .section-image{
     background: grey;
-    height: 230px;
-    width: 384px;
+    height: 300px;
+    width: 550px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: 0;
+    color: #fff;
+    text-align: center;
+    padding: 96px 0;
+    box-sizing: border-box;
+    
 }
+
+#project-section03 .section-content .section-image{
+    animation: 10s scroll-down infinite ;
+}
+
+@keyframes scroll-down{
+    0%{
+        background-position-y : 0
+    }
+    50%{
+        background-position-y : 100%
+    }
+    100%{
+        background-position-y : 0
+    }
+}
+
+#project-section04 .section-content .section-image{
+    background-size: contain;
+    background-position-x: center;
+    background-color: #fff;
+}
+
 
 .section-content .section-title{
     min-width: 282px;
